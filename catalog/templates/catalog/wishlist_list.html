@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>All Wishlists</h1>
+
+    {% if wishlist_list %}
+    <ul>
+
+      {% for wishlist in wishlist_list %}
+<!--      <li class="{% if .is_overdue %}text-danger{% endif %}">-->
+        <p>{{wishlist.item.tag}}</p>
+<!--      </li>-->
+      {% endfor %}
+    </ul>
+
+    {% else %}
+      <p>There are no wishlists.</p>
+    {% endif %}
+{% endblock %}

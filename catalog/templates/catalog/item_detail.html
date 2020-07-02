@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div style="margin-left: 5%;width:800px;height:auto;border: 1px solid hotpink;border-radius: 1px ;position: sticky;background-color: white">
+<h1>{{ item.tag }}</h1>
+
+<p  style="margin-left: 5%;"><strong>Category:</strong> <a href="{% url 'category-detail' item.category.pk %}">{{ item.category }}</a></p>
+<p style="margin-left: 5%;"><strong>Description:</strong> {{ item.description }}</p>
+<p style="margin-left: 5%;"><strong>Price</strong> {{ item.price }}</p>
+<p style="margin-left: 5%;"><strong>Amount</strong> {{ item.amount }}</p>
+<p style="margin-left: 5%;"><strong>Expiration Date:</strong> {{ item.expiration_date }}</p>
+</div>
+{% endblock %}
+

@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>My wishlist </h1>
+
+    {% if wishlist_list %}
+    <ul>
+
+      {% for wishlist in wishlist_list %}
+
+        <a href="{% url 'item-detail' wishlist.item.pk %}">{{wishlist.item.tag}}</a>
+
+      {% endfor %}
+    </ul>
+
+    {% else %}
+      <p>There are no items in the wishlist.</p>
+    {% endif %}
+{% endblock %}
+

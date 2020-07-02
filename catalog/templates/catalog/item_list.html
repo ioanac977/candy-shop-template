@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+    <h1>Item List</h1>
+
+    {% if item_list %}
+    <ul>
+
+      {% for item in item_list %}
+      <li>
+        <a href="{{ item.get_absolute_url }}">{{ item.tag }}</a> ({{item.category}})
+      </li>
+
+      {% endfor %}
+
+    </ul>
+
+    {% else %}
+      <p>There are no items in the category.</p>
+    {% endif %}
+{% endblock %}
+

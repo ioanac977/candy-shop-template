@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Item: {{item.tag}}</h1>
+    <p>Wisher: {{wisher}}</p>
+
+
+
+    <form action="" method="post">
+        {% csrf_token %}
+
+        <table>
+        {{ context.as_table }}
+        </table>
+        <input type="submit" value="Submit" />
+    </form>
+{% endblock %}

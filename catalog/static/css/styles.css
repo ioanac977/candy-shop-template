@@ -1,0 +1,22 @@
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    background-color: white;
+     width:200px;
+    height: 100px;
+    border: 1px solid hotpink;
+    border-radius: 1px ;
+    position: sticky;
+
+}
+
+body{
+    background-color: aqua;
+    background-image: url("../images/candies.jpg");
+    margin-top: 5%;
+    margin-left: 5%;
+
+
+}
+
