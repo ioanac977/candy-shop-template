@@ -1,6 +1,6 @@
 # proiect_python_candy_shop
 # DESCRIPTION 
- This project is a candy shop composed with Categories, Items, Users and Wishlists.
+ This project is a candy shop composed of Categories, Items, Users and Wishlists.
  Actions : login, logout, view candy categories , view items for each categories , add items to wishlist 
 # CONFIGURATIONS 
 - install python version > 3.0
